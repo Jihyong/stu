@@ -26,3 +26,4 @@ for name in names:
                     "감사합니다.\n"
                     "- 나코 드림.\n")
         email_file.write(contents)
+##
