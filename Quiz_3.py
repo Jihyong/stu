@@ -23,3 +23,20 @@ class Word():
 word = Word("애빼시","애교 빼면 시체","애들은 빼빼로 시시해",1)
 word.show_question()
 word.check_answer(int(input("=> ")))
+
+#
+def three():
+    print("three",end=" ")
+    return 3
+def five():
+    print("five",end=" ")
+    return 5
+def seven():
+    print("seven",end=" ")
+    return 7
+three()>five()>seven()
+# 윗줄의 구조는 three()> five() and five() > seven()
+# 따라서       이 부분은 False 이기 때문에 and 뒷 부분은 출력 대상이 아님
+#             그러므로 함수 실행시 three five 만 출력
+
+
