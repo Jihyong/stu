@@ -15,9 +15,19 @@
 # print(max(n), n.index(max(n))+1)
 
 # 세자리 자연수의 곱 a * b * c의 결과값에 나온 각 숫자 개수 구하기
-a = int(input())
-b = int(input())
-c = int(input())
-result = list(str(a*b*c))
+# a = int(input())
+# b = int(input())
+# c = int(input())
+# result = list(str(a*b*c))
+# for i in range(10):
+#     print(result.count(str(i)))
+
+# 42로 나누었을 때,서로 다른 나머지가 몇 개?
+n = []
 for i in range(10):
-    print(result.count(str(i)))
+    a = int(input())
+    b = a % 42
+    n.append(b)
+s = set(n)
+print(len(s))
+
