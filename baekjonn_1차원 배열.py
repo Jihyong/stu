@@ -45,18 +45,30 @@
 #     sum += score[i]
 # print(sum / n)
 
+# n = int(input())
+# score = list(map(float,input().split()))
+# max = 0
+# for i in range(n):
+#     if max < score[i]:
+#         max = score[i]
+# for i in range(n):
+#     score[i] = (score[i] / max) * 100
+# sum = 0
+# for i in range(n):
+#     sum += score[i]
+#     mean = sum / n
+# print(mean)
+
+# OX 퀴즈 문제( 점수 구하기)
 n = int(input())
-score = list(map(float,input().split()))
-max = 0
-for i in range(n):
-    if max < score[i]:
-        max = score[i]
-for i in range(n):
-    score[i] = (score[i] / max) * 100
-sum = 0
-for i in range(n):
-    sum += score[i]
-    mean = sum / n
-print(mean)
-
-
+for _ in range(n):
+    ox = input()
+    score = 0
+    cnt = 0
+    for i in range(len(ox)):
+        if ox[i] == 'O':
+            cnt += 1
+            score += cnt
+        elif ox[i] == 'X':
+            cnt = 0
+    print(score)
