@@ -23,11 +23,40 @@
 #     print(result.count(str(i)))
 
 # 42로 나누었을 때,서로 다른 나머지가 몇 개?
-n = []
-for i in range(10):
-    a = int(input())
-    b = a % 42
-    n.append(b)
-s = set(n)
-print(len(s))
+# n = []
+# for i in range(10):
+#     a = int(input())
+#     b = a % 42
+#     n.append(b)
+# s = set(n)
+# print(len(s))
+
+# 새로운 평균 구하기
+# n = int(input())
+# score = list(map(float,input().split()))
+# max = 0
+# for i in range(n):
+#     if max < score[i]:
+#         max = score[i]
+# for i in range(n):
+#     score[i] = (score[i] / max) * 100
+# sum = 0
+# for i in range(n):
+#     sum += score[i]
+# print(sum / n)
+
+n = int(input())
+score = list(map(float,input().split()))
+max = 0
+for i in range(n):
+    if max < score[i]:
+        max = score[i]
+for i in range(n):
+    score[i] = (score[i] / max) * 100
+sum = 0
+for i in range(n):
+    sum += score[i]
+    mean = sum / n
+print(mean)
+
 
